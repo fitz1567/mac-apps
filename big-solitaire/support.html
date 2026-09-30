@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Big Solitaire Support</title>
+  <meta name="description" content="Help with Big Solitaire for iPhone, iPad and Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#15803d; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#4ade80; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Big Solitaire</span></a>
+      <h1>Support</h1>
+      <p class="meta">Big cards, winnable deals</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Big%20Solitaire%20support">k.fitzgerald310@gmail.com</a> with your device model and iOS or iPadOS version.</p></div>
+    <h2>Playing</h2>
+    <details><summary>How do I move a card?</summary><p>Tap it. It goes to the best place it can: up to its foundation (the four piles at the top right, ace to king) if it can, otherwise onto a column. Tap the stock (top left) to turn over cards; when it runs out, tap it again to turn the waste back over.</p></details>
+    <details><summary>What are the rules?</summary><p>Build the four foundations up from ace to king, one per suit. In the columns, stack cards down in alternating colors (a red 6 on a black 7); only a king can go in an empty column. Win by getting every card onto the foundations.</p></details>
+    <details><summary>Can every deal be won?</summary><p>In Draw 1, yes: every deal the app gives you was won by its built-in solver first. Draw 3 (in Settings) is harder, and not every Draw 3 deal can be won.</p></details>
+    <details><summary>I’m stuck. What can I do?</summary><p>Tap the light bulb for a hint (it highlights a card to move, or the stock), and use Undo as often as you like. When every card is face up, a Finish button puts them all away for you.</p></details>
+    <details><summary>Can the cards be easier to read?</summary><p>Yes. In Settings, turn on <strong>Extra large card labels</strong>, and <strong>Four-color suits</strong> to make diamonds blue and clubs green. On iPhone, turn it sideways for bigger cards; on a Mac, make the window bigger.</p></details>
+    <h2>Deals</h2>
+    <details><summary>How many deals are free?</summary><p>The first 20 deals and Today’s Deal, every day. A one-time purchase unlocks all 1,000 deals.</p></details>
+    <details><summary>Does everyone get the same Today’s Deal?</summary><p>Yes. Everyone gets the same deal on the same day.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another iPhone or iPad?</summary><p>No. Sign in with the same Apple Account, open Settings in the app and tap <strong>Restore Purchase</strong>.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
