@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Big Sudoku Support</title>
+  <meta name="description" content="Help with Big Sudoku for iPhone and iPad.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#c2410c; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#fb923c; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Big Sudoku</span></a>
+      <h1>Support</h1>
+      <p class="meta"></p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Big%20Sudoku%20support">k.fitzgerald310@gmail.com</a> with your device model and iOS or iPadOS version.</p></div>
+    <h2>Playing</h2>
+    <details><summary>What’s the difference between Easy, Medium and Hard?</summary><p>Easy puzzles need only one step: find a square where just one number fits. Medium puzzles also need you to find the only square in a row, column or box that can take a number. Hard puzzles need pencil marks and pairs. No puzzle ever needs guessing, and every puzzle has exactly one solution.</p></details>
+    <details><summary>How do pencil marks work?</summary><p>Tap <strong>Notes</strong>, then tap numbers to jot small possibilities in a square. Tap <strong>Notes</strong> again to go back to writing answers. When you write an answer, that number is cleared from the notes in its row, column and box.</p></details>
+    <details><summary>How do I check my work?</summary><p>Tap <strong>Check</strong> and any wrong numbers turn red. If you’d rather see mistakes right away, turn on <strong>Show mistakes right away</strong> in Settings. A number that repeats in its row, column or box always shows in red.</p></details>
+    <details><summary>Can the numbers be bigger?</summary><p>Yes. Turn on <strong>Extra large numbers</strong> in Settings. On iPad, turn it sideways to see the board and keypad side by side.</p></details>
+    <details><summary>Is there a timer?</summary><p>No. Take as long as you like. Your game is saved as you play.</p></details>
+    <h2>Puzzles</h2>
+    <details><summary>How many puzzles are free?</summary><p>The first 10 puzzles at each level and Today’s Puzzle, every day. A one-time purchase unlocks every puzzle at every level.</p></details>
+    <details><summary>Does everyone get the same Today’s Puzzle?</summary><p>Yes. Everyone gets the same puzzle on the same day: easier early in the week, harder at the weekend.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another iPhone or iPad?</summary><p>No. Sign in with the same Apple Account, open Settings in the app and tap <strong>Restore Purchase</strong>.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
