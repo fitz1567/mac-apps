@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mixbar Support</title>
+  <meta name="description" content="Help with Mixbar for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#6a3dc8; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#b59bf3; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Mixbar</span></a>
+      <h1>Support</h1>
+      <p class="meta">A volume slider for every app</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All Mac apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Mixbar%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Getting started</h2>
+    <details><summary>macOS asks to allow audio recording. Why?</summary><p>That’s the permission macOS uses for any app that adjusts other apps’ sound. Mixbar uses it only to change volume live. Nothing is recorded or saved. You can review it in System Settings › Privacy & Security, under screen and system audio recording.</p></details>
+    <details><summary>An app isn’t in the list.</summary><p>Apps appear while they play sound. Start playback in that app and it shows up, or turn on <strong>Show apps that aren’t playing</strong> in Settings.</p></details>
+    <details><summary>Boosted sound seems flattened.</summary><p>Above 100%, a built-in limiter keeps loud moments from crackling, which can make very loud sources sound squashed. Lower that app’s slider a little.</p></details>
+    <h2>Features</h2>
+    <details><summary>Can I send one app to different speakers?</summary><p>Yes. Click the <strong>…</strong> button at the end of that app’s row and choose an output, for example music to your speakers and a call to your headphones. <strong>Reset to normal</strong> in the same menu undoes it.</p></details>
+    <details><summary>How do the keyboard shortcuts work?</summary><p>Turn on <strong>Keyboard shortcuts</strong> in Settings. They act on the app you’re using: ⌃⌥M mutes or unmutes it, ⌃⌥= turns it up 10%, and ⌃⌥- turns it down 10%.</p></details>
+    <details><summary>Does it open at login?</summary><p>Only if you turn on <strong>Open at login</strong> in Settings.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. Sign in to the App Store with the same Apple Account on your other Mac and download it from your purchases.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>

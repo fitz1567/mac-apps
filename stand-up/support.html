@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stand Up Support</title>
+  <meta name="description" content="Help with Stand Up for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#2b75ad; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#7cc0ec; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Stand Up</span></a>
+      <h1>Support</h1>
+      <p class="meta">Move more without missing work</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All Mac apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Stand%20Up%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Setting up</h2>
+    <details><summary>How do I open Stand Up?</summary><p>Click the figure (or the ring or minutes left, depending on your menu bar style) in the menu bar at the top right of your screen. The panel has two tabs: <strong>Today</strong> and <strong>Settings</strong>. Stand Up has no Dock icon.</p></details>
+    <details><summary>Reminders don’t appear. What should I check?</summary><p>Open System Settings › Notifications › Stand Up and make sure notifications are allowed. If they’re off, Stand Up shows a small floating panel instead. Also check that reminders are on in Settings and that you’re inside your working hours.</p></details>
+    <details><summary>Why didn’t it remind me?</summary><p>On purpose, Stand Up waits while your camera or microphone is on, while something is full screen, during calendar events (if you turned that on), outside working hours and while paused. Time away from your Mac, sleeping or locking it counts as a break and restarts the countdown.</p></details>
+    <details><summary>Can I run the first-time setup again?</summary><p>Yes: Settings › <strong>Run first-time setup again</strong>.</p></details>
+    <h2>Features</h2>
+    <details><summary>How do I pause reminders?</summary><p>In the Today tab, open <strong>Pause</strong> and choose 30 minutes, 1 hour, 2 hours, until tomorrow morning, or until you resume. The menu bar shows a pause icon, and reminders come back on their own.</p></details>
+    <details><summary>What are eye breaks?</summary><p>An optional 20-second reminder, every 20 minutes by default, to look at something about 20 feet (6 m) away. Turn them on in Settings.</p></details>
+    <details><summary>How do I see my history or export it?</summary><p>History is at the bottom of the Today tab. Choose 7, 30 or 90 days, then click the export button (a square with an arrow) to save a CSV file you can open in Numbers or Excel.</p></details>
+    <details><summary>How do I add the widget?</summary><p>For the desktop, right-click the desktop and choose <strong>Edit Widgets</strong>. For Notification Center, click the date and time in the menu bar and choose <strong>Edit Widgets</strong>. Then search for Stand Up.</p></details>
+    <details><summary>How do I use Shortcuts or a Focus filter?</summary><p>Stand Up’s actions (start a break, log a stand-up, pause, resume, start an eye break) are in the Shortcuts app. To pause reminders during a Focus, open System Settings › Focus, choose a Focus, then Focus Filters › Add Filter › Stand Up.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. Sign in to the App Store with the same Apple Account on your other Mac and download it from your purchases.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
