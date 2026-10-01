@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disk Attic Support</title>
+  <meta name="description" content="Help with Disk Attic for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#b8532f; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#f29e45; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Disk Attic</span></a>
+      <h1>Support</h1>
+      <p class="meta">Open &amp; convert old Mac disks</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Disk%20Attic%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Opening disks</h2>
+    <details><summary>Which images can Disk Attic open?</summary><p>DiskCopy 4.2 floppy images; raw images (.dsk, .img, .hda, .toast, .iso), including Apple partition maps and ISO/HFS hybrid CDs; UDIF .dmg images, compressed or not; and images wrapped in MacBinary. Inside them it reads HFS (Mac OS Standard) and MFS volumes, and the ISO 9660 side of CDs. Choose File › Open Image, or drop an image on the window or the Dock icon.</p></details>
+    <details><summary>How do I get my old floppy or CD onto my Mac?</summary><p>Disk Attic reads image files, not disks. With the disk in a USB drive, open Terminal and type <code>diskutil list</code> to find it (for example /dev/disk4). Then type <code>sudo dd if=/dev/rdisk4 of=~/Desktop/old-disk.img bs=512</code> and enter your password. Double-check the disk number, because dd copies whatever it’s given. Then open old-disk.img in Disk Attic.</p></details>
+    <details><summary>My image won’t open.</summary><p>HFS+ images already open in Finder, so double-click them there. Encrypted images need to be opened in Finder with their password first. DiskCopy 6 (NDIF) images and StuffIt archives aren’t read yet; The Unarchiver opens .sit files.</p></details>
+    <details><summary>Does Disk Attic change my images?</summary><p>No. Images are only ever read. Extracted and converted files are new files in the folder you choose, and nothing is overwritten.</p></details>
+    <h2>Converting and extracting</h2>
+    <details><summary>Which files can it convert?</summary><p>MacPaint and bitmap PICT pictures become PNG or PDF. MacWrite, MacWrite II and Pro, ClarisWorks and AppleWorks text, Word for Mac, WriteNow, SimpleText and about 40 more word processors become Word (.docx), RTF, PDF or plain text. PICT pictures made of lines and text, and MacDraw and ClarisWorks drawings, are drawn on a best-effort basis. Spreadsheets and databases aren’t converted yet.</p></details>
+    <details><summary>What’s a resource fork, and which way should I keep it?</summary><p>Old Mac files have two parts, and many keep their icon, fonts, sounds or styled text in the second one, the resource fork. <strong>Mac files</strong> keeps it the way macOS stores it, the best choice on a Mac. <strong>MacBinary</strong> (.bin) suits emulators like Mini vMac, Basilisk II and SheepShaver. <strong>AppleDouble</strong> writes a ._ file beside each file, the way Macs write to USB drives. <strong>Data fork only</strong> is fine for pictures and text.</p></details>
+    <details><summary>Can Finder preview old files?</summary><p>Yes. Disk Attic’s Quick Look extension previews MacPaint, PICT, MacWrite, ClarisWorks and Word for Mac files in Finder. Files extracted as Mac files keep the type codes it uses to recognize them.</p></details>
+    <h2>Disk Attic Pro</h2>
+    <details><summary>What does Pro add?</summary><p>Extracting files with their resource forks and converting them, one at a time or a whole disk at once. Opening images, browsing and previewing are free. It’s a one-time purchase that works with Family Sharing, with no subscription.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. Sign in to the App Store with the same Apple Account on your other Mac and download it from your purchases.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
