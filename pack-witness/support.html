@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pack Witness Support</title>
+  <meta name="description" content="Help with Pack Witness for iPhone, iPad and Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#0f766e; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#2dd4bf; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Pack Witness</span></a>
+      <h1>Support</h1>
+      <p class="meta">Packing video proof for orders</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Pack%20Witness%20support">k.fitzgerald310@gmail.com</a> with your device model and iOS or iPadOS version.</p></div>
+    <h2>Recording</h2>
+    <details><summary>How does a clip start and stop?</summary><p>Scan a shipping label or an order barcode (hold it up to the camera, or use a USB scanner on the Mac), or type the order number. Recording starts at once. Scan the next order to save this clip and start the next, or tap <strong>Stop and Save</strong>.</p></details>
+    <details><summary>Which barcodes does it read?</summary><p>USPS labels (the long barcode that starts with 420 and the ZIP code; Pack Witness keeps just the tracking number), UPS 1Z numbers, FedEx tracking numbers, and your own order barcodes, including QR codes and Code 128.</p></details>
+    <details><summary>What's burned into the video?</summary><p>The order or tracking number, the date and a clock with seconds, and the app name. They're drawn into each frame while recording, so they can't be removed later, and a cut in the clip shows as a jump in the clock.</p></details>
+    <details><summary>Can I use my iPhone as the Mac's camera?</summary><p>Yes. With Continuity Camera, an iPhone on a mount above your packing table shows up in the Camera menu on the Mac's Record screen. A USB webcam works too.</p></details>
+    <h2>Disputes</h2>
+    <details><summary>What's in the dispute PDF?</summary><p>Six still frames from the clip, each with its overlay, plus the order number, recording start and end times, length, file name and size, the clip's SHA-256 and the device that recorded it. It's kept under 4.5 MB, small enough for Stripe's evidence upload, which takes PDFs and images but not video.</p></details>
+    <details><summary>Will this win my case?</summary><p>It's evidence, not a guarantee. It helps most with "wrong item", "missing part" and "empty box" claims, and when you talk to the buyer directly. Marketplaces and card networks make their own decisions, and for "item not received" claims, tracking and delivery confirmation are what count.</p></details>
+    <details><summary>What's the SHA-256 for?</summary><p>It's a fingerprint of the video file, saved when recording stops. If anyone computes the SHA-256 of the file later and gets the same value, the file hasn't changed.</p></details>
+    <h2>Storage</h2>
+    <details><summary>How much space do clips take?</summary><p>About 19 MB a minute at 720p (the default), and about 38 MB at 1080p. A 90-second pack is about 28 MB.</p></details>
+    <details><summary>When are clips deleted?</summary><p>After 120 days by default (choose 30 days to a year, or never), and the oldest go first when you reach your storage limit. A clip marked <strong>Keep (dispute open)</strong> is never deleted. The free version also keeps only your last 10 clips.</p></details>
+    <h2>Pack Witness Pro</h2>
+    <details><summary>What does Pro add?</summary><p>Every clip kept (the free version keeps your last 10), the dispute PDF, and on the Mac, saving clips to any folder you choose. It's a one-time purchase for iPhone, iPad and Mac with Family Sharing, and there's no subscription. To restore it on another device, tap <strong>Restore Purchase</strong> in Settings.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another iPhone or iPad?</summary><p>No. Sign in with the same Apple Account, open Settings in the app and tap <strong>Restore Purchase</strong>.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
