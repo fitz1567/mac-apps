@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Label Printer Studio Support</title>
+  <meta name="description" content="Help with Label Printer Studio for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#c2410c; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#ff854a; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Label Printer Studio</span></a>
+      <h1>Support</h1>
+      <p class="meta">Price tags &amp; barcode labels</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Label%20Printer%20Studio%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Printing</h2>
+    <details><summary>Which printers can it print to?</summary><p>It prints through the Mac’s own print system, so your label printer needs a macOS driver from its maker. Add the printer in System Settings › Printers & Scanners with that driver, and Label Printer Studio prints to it through the Mac’s print dialog, one label per page, on a page the size of the label. Before a big job, print one label to check the size and position.</p></details>
+    <details><summary>Can I print sheets of labels on an office printer?</summary><p>No. It prints one label per page, so it’s made for roll label printers. An office printer prints each label on its own sheet of paper.</p></details>
+    <details><summary>Can it print postage or a carrier’s shipping label?</summary><p>No. It doesn’t buy postage or open the label files that carriers and marketplaces make. Its 4 × 6 Shipping Label is a from and ship-to address label with an order number barcode, made from your own data.</p></details>
+    <details><summary>My labels come out sideways or off center.</summary><p>Under <strong>Printer</strong> in the inspector, turn on <strong>Turn 90° on the page</strong> if they’re sideways, or nudge them right or down a little at a time if they’re shifted. If the driver lists its own label sizes, choose the matching one under Paper Size in the print dialog.</p></details>
+    <details><summary>My barcodes don’t scan.</summary><p>Set <strong>Printer resolution</strong> under Printer to your printer’s (203 or 300 dpi, usually on its box or in its manual), so the bars land on whole printer dots. If the barcode is small, give its field more room on the label.</p></details>
+    <h2>Spreadsheets</h2>
+    <details><summary>What files can I import?</summary><p>CSV files (comma, semicolon or tab separated) and Excel .xlsx files with a header row. From Numbers, choose File › Export To › CSV or Excel first.</p></details>
+    <details><summary>How do I print several of one item?</summary><p>Add a column with the count (one named Qty or Quantity is picked automatically) and choose it as the quantity column on the Data tab. A blank quantity counts as 1, and 0 skips the row.</p></details>
+    <details><summary>Why did my UPC codes get a 0 at the front?</summary><p>Excel drops leading zeros from codes kept as numbers. Label Printer Studio puts the zero back only when the check digit proves it, and says so on the Data tab.</p></details>
+    <details><summary>Is there a limit on how many labels?</summary><p>A job can have up to 20,000 labels, and up to 1,000 from one row. The Data and Preview tabs tell you when a sheet asks for more.</p></details>
+    <h2>Label Printer Studio Pro</h2>
+    <details><summary>What’s free, and what does Pro add?</summary><p>Free has every template and size, spreadsheet import and a preview of every label (labels past the first 10 show a lock), and prints or exports up to 10 labels at a time with a small watermark. Pro is a one-time purchase that prints whole sheets in one job, adds serial numbers and saved templates, and removes the watermark. There’s no subscription.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. Sign in to the App Store with the same Apple Account on your other Mac and download it from your purchases.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>

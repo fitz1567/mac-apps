@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plainwire Support</title>
+  <meta name="description" content="Help with Plainwire for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#096b82; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#2e9eb3; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Plainwire</span></a>
+      <h1>Support</h1>
+      <p class="meta">Native API client, plain files</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Plainwire%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Getting started</h2>
+    <details><summary>Where are my collections kept?</summary><p>In the folder you choose: <code>opencollection.yml</code> for the collection, a <code>folder.yml</code> in each folder, one <code>.yml</code> file per request, and environments in <code>environments/</code>. Put the folder in your project’s Git repository to share it.</p></details>
+    <details><summary>Why does Plainwire ask me to pick a folder?</summary><p>Mac App Store apps can open only the folders you choose. Choose <strong>File › New Collection…</strong> to make one, or <strong>File › Open Collection Folder…</strong> for one you have. Plainwire remembers the folders you open.</p></details>
+    <details><summary>Does it work with Bruno?</summary><p>Yes. Plainwire reads and writes OpenCollection YAML in the layout Bruno 3 uses, so Bruno and its command-line runner open the same folder. It also opens <code>.bru</code> collections, read only; <strong>File › Convert to OpenCollection YAML…</strong> writes an editable copy into a new folder.</p></details>
+    <h2>Moving from Paw or Postman</h2>
+    <details><summary>How do I move from Paw (RapidAPI for Mac)?</summary><p>In Paw, choose <strong>File › Export › All Requests › OpenAPI 3.0 Generator</strong> (install the OpenAPI 3.0 Generator extension from Paw’s extensions page if it isn’t listed) and save the file. In Plainwire, choose <strong>File › Import › OpenAPI or Swagger (and Paw)…</strong>. The <strong>Moving from Paw</strong> guide in Plainwire’s Help menu has every step, and what to check afterwards: Paw’s exporter labels query parameters as headers, and it doesn’t export passwords or tokens, so add those in <strong>Collection Settings › Secrets</strong>.</p></details>
+    <details><summary>How do I import from Postman?</summary><p>In Postman, export the collection as <strong>Collection v2.1</strong> and each environment as a file. In Plainwire, choose <strong>File › Import › Postman Collection…</strong> and <strong>Postman Environment…</strong>. Tokens and passwords in the export’s auth settings, credential headers and variables go to your Keychain, not the files. With Pro, most <code>pm.test</code>, <code>pm.expect</code> and <code>pm.environment</code> scripts run as they are.</p></details>
+    <details><summary>Can I paste a cURL command?</summary><p>Yes: <strong>Request › Paste cURL as New Request…</strong> (⇧⌘V). <strong>Request › Copy as cURL</strong> (⇧⌘C) goes the other way.</p></details>
+    <h2>Secrets and scripts</h2>
+    <details><summary>Where do my passwords and tokens go?</summary><p>To the Keychain on your Mac. The file gets a <code>{{variable}}</code> in their place, so each person who uses the collection adds their own values. This happens for auth fields, credential headers like Authorization and X-API-Key, and variables named like secrets.</p></details>
+    <details><summary>Why did Plainwire ask before running scripts?</summary><p>Scripts and tests in a collection run on your Mac when you send, and they can read your variables, secrets included. Plainwire asks once per collection folder, so you can choose <strong>Send Without Scripts</strong> for a collection you don’t trust.</p></details>
+    <details><summary>Can I use a local server with a self-signed certificate?</summary><p>Turn on <strong>Allow self-signed certificates on local servers</strong> in Plainwire’s Settings. It applies only to this Mac, local network addresses, and .local, .test and .internal names.</p></details>
+    <h2>Plainwire Pro</h2>
+    <details><summary>What’s free, and what does Pro add?</summary><p>Free: unlimited requests, history (up to 2,000 requests), one collection folder, every import and cURL export. Pro adds environments, scripts and tests, and more than one collection folder at a time. It’s a one-time purchase, with no subscription, and Family Sharing is on.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. Sign in to the App Store with the same Apple Account on your other Mac and download it from your purchases.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>

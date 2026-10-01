@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Caliper Support</title>
+  <meta name="description" content="Help with Pixel Caliper for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#d6155f; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#ff6fa3; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Pixel Caliper</span></a>
+      <h1>Support</h1>
+      <p class="meta">Screen ruler &amp; edge snapping</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Pixel%20Caliper%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Getting started</h2>
+    <details><summary>Where is Pixel Caliper after I open it?</summary><p>In the menu bar, under the ruler icon; it has no Dock icon. Choose <strong>Welcome and Shortcuts</strong> in its menu to see the keyboard shortcuts again.</p></details>
+    <details><summary>How do I use the ruler?</summary><p>Press ⌃⇧R or choose <strong>Ruler</strong> in the menu. Drag it to move it, drag its far end to change its length, and double-click it to turn it vertical. After you click it, the arrow keys move it (hold Shift for 10), Option-arrow keys change its length, G drops a guide at the pointer and Escape hides it. <strong>Reset Ruler Position</strong> brings it to the middle of the display with the pointer.</p></details>
+    <details><summary>How do guides work?</summary><p>⌃⇧V and ⌃⇧H add a vertical or horizontal guide at the pointer, and the gaps between guides are labeled. Press ⌃⇧E to edit them: drag a guide, press Tab to select one, nudge it with the arrow keys, press Delete to remove it and Escape when you’re done. Guides snap to each other as you drag.</p></details>
+    <details><summary>Points or pixels?</summary><p>Points are what apps and CSS use; on a Retina display each point is two pixels. Switch with ⌃⇧U or the Units section of the menu. Copied CSS and SwiftUI always use points.</p></details>
+    <details><summary>A shortcut says “In use by another app.”</summary><p>Another app already uses that key combination, so Pixel Caliper leaves it alone. Use the menu instead, or quit the other app and reopen Pixel Caliper.</p></details>
+    <h2>Edge snapping and colors</h2>
+    <details><summary>Why does edge snapping need Screen Recording?</summary><p>To find edges, Pixel Caliper has to read the pixels under the pointer, and macOS allows that only with Screen Recording permission. It reads one thin row and one thin column through the pointer and a tiny square for the loupe, in memory, and never records, saves or sends them. The ruler, guides and Pick Color work without it.</p></details>
+    <details><summary>I allowed Screen Recording, but snapping still doesn’t work.</summary><p>Quit Pixel Caliper from its menu and open it again, since macOS may apply the permission only after the app reopens. Check that Pixel Caliper is turned on in System Settings › Privacy &amp; Security › Screen &amp; System Audio Recording (Screen Recording on macOS 14).</p></details>
+    <details><summary>macOS asks again about screen access.</summary><p>macOS may ask from time to time whether apps should keep access to your screen. Allow it to keep using edge snapping; if you don’t, the ruler and guides keep working.</p></details>
+    <details><summary>It doesn’t find an edge I expected.</summary><p>Edge snapping looks for crisp changes in color, so very faint borders, gradients, shadows and see-through backgrounds may not count. Move the <strong>Edge tolerance</strong> slider in Settings toward Faint to find fainter edges, or toward Strong to skip textures and noise.</p></details>
+    <details><summary>How do I copy a color?</summary><p>Press ⌃⇧C. With edge snapping on, it copies the pixel under the pointer from the loupe; otherwise macOS’s color magnifier opens so you can click a color, which needs no permission. Choose the format (hex, RGB, SwiftUI or NSColor) in Settings, and find your recent colors under <strong>Colors…</strong> in the menu.</p></details>
+    <h2>Pixel Caliper Pro</h2>
+    <details><summary>What does Pro add?</summary><p>Edge snapping with its loupe, picking colors, keeping several measurements on screen, and copying sizes as text, CSS or SwiftUI. It’s a one-time purchase that works with Family Sharing, with no subscription.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. Sign in to the App Store with the same Apple Account on your other Mac and download it from your purchases.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
