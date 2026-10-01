@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feast Clock Support</title>
+  <meta name="description" content="Help with Feast Clock for iPhone and iPad.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#b4472a; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#e8845f; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Feast Clock</span></a>
+      <h1>Support</h1>
+      <p class="meta">Oven planner for big meals</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Feast%20Clock%20support">k.fitzgerald310@gmail.com</a> with your device model and iOS or iPadOS version.</p></div>
+    <h2>Planning</h2>
+    <details><summary>How does Feast Clock plan the meal?</summary><p>Backward from dinner. Each dish is ready at dinner (or earlier, if you set it to be ready before), comes out its rest time before that, goes in its cook time before that, and its prep starts before it goes in. Each oven is preheated before its first dish, turned up or down between dishes, and turned off when it’s done.</p></details>
+    <details><summary>What’s a clash?</summary><p>Two dishes in one oven at different temperatures at the same time, more dishes than the oven’s racks hold, an oven that can’t heat up in time between one dish and the next, more pots than burners, or more dishes than slow cookers or air fryers. Each one is listed on the <strong>Plan</strong> tab; tap it for fixes.</p></details>
+    <details><summary>How are the fixes chosen?</summary><p>Feast Clock tries each change (the other oven, a longer rest for a roast, cooking a dish at the other’s temperature with its time adjusted, both at a temperature in the middle, starting a dish earlier within how long it can wait, or the air fryer) and re-plans the whole meal to make sure it clears the clash without leaving more clashes than before. The simplest fixes come first. Baking (bread and desserts) isn’t moved off its temperature unless you allow it in the dish.</p></details>
+    <details><summary>How accurate are adjusted times?</summary><p>They’re estimates. A dish cooked 25°F cooler takes a little longer, and Feast Clock adjusts the time for that, but ovens and recipes vary. Check each dish is done, with a food thermometer for meat.</p></details>
+    <h2>Alarms</h2>
+    <details><summary>Why only the next few alarms?</summary><p>iOS limits how many alarms an app can set, so Feast Clock sets the next few steps. When you tap <strong>Done</strong> on an alarm, or open the app, the next ones are set.</p></details>
+    <details><summary>Do the alarms reach my Apple Watch?</summary><p>Yes. Alarms show on a paired Apple Watch, and the Live Activity shows in the Watch’s Smart Stack. There’s no separate Watch app to install.</p></details>
+    <details><summary>I didn’t allow alarms.</summary><p>Feast Clock uses time-sensitive notifications instead. To switch to alarms, turn on Alarms for Feast Clock in the Settings app.</p></details>
+    <h2>Turkey</h2>
+    <details><summary>Where do the turkey times come from?</summary><p>The USDA Food Safety and Inspection Service’s “Let’s Talk Turkey” roasting timetable (at 325°F) and its safe-thawing guidance. A turkey is done at 165°F in the innermost part of the thigh and wing and the thickest part of the breast. Follow your recipe and check with a food thermometer.</p></details>
+    <h2>Feast Clock Pro</h2>
+    <details><summary>What does Pro add?</summary><p>Unlimited dishes (the free version plans four), a second oven, more than one saved meal, and the templates for Thanksgiving, Christmas, Easter, a Sunday roast and a dinner party. Pro is a one-time purchase with Family Sharing, and there’s no subscription. To restore it on a new device, tap <strong>Restore purchase</strong> on the Kitchen tab.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another iPhone or iPad?</summary><p>No. Sign in with the same Apple Account, open Settings in the app and tap <strong>Restore Purchase</strong>.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
