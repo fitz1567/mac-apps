@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardlark Support</title>
+  <meta name="description" content="Help with Cardlark for iPhone and iPad.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#1f6b4f; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#6fd1a6; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Cardlark</span></a>
+      <h1>Support</h1>
+      <p class="meta">Rewards, offers &amp; credits</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Cardlark%20support">k.fitzgerald310@gmail.com</a> with your device model and iOS or iPadOS version.</p></div>
+    <h2>Which card to use</h2>
+    <details><summary>How does Cardlark pick a card?</summary><p>Type a store or pick a category and enter the amount. Each of your cards is ranked by estimated return: the purchase amount times the card’s rate there, times what its points are worth (1¢ a point unless you change it), plus the best offer you’ve saved for that card and store. Each result says why, such as “4x dining” or “your 5% category this quarter”.</p></details>
+    <details><summary>Why doesn’t the store earn what I expected?</summary><p>Card rewards follow the code the store’s card terminal reports, not the store’s name. Superstores like Walmart and Target often don’t code as groceries, and warehouse clubs code as wholesale clubs. Cardlark shows how a store usually codes; if yours codes differently, tap <strong>Codes as…</strong> and pick the category; Cardlark remembers it for that store.</p></details>
+    <details><summary>Are spending caps counted?</summary><p>Caps are shown on each result but not tracked, because Cardlark doesn’t see your spending. Rates booked only through an issuer’s travel site are listed as tips, not counted at a store.</p></details>
+    <details><summary>My card has rotating or chosen 5% categories.</summary><p>Open the card in <strong>Cards</strong> and add a bonus category with the date it ends. Cardlark counts it until then and can remind you when a new quarter starts.</p></details>
+    <h2>Card data</h2>
+    <details><summary>Where do the rates come from?</summary><p>From each issuer’s public card page, read by a person (no scraping), with a link to the page and the date it was checked on every card. Updates arrive with app updates, about every quarter.</p></details>
+    <details><summary>A rate is wrong or out of date.</summary><p>Open the card and tap <strong>Report an outdated rate</strong>: it starts an email with the card’s name and the data version. You can also tap any rate to change it right away; a dot marks your edits, they’re kept when the card data is updated, and <strong>Reset to published</strong> undoes them.</p></details>
+    <details><summary>My card isn’t listed.</summary><p>Cardlark includes popular U.S. cards. With Pro, <strong>Make your own card</strong> adds any card with your own rates, fee and credits.</p></details>
+    <h2>Offers and credits</h2>
+    <details><summary>Can Cardlark add my bank’s offers?</summary><p>No. No bank offers an official way for apps to list or enroll card-linked offers, and Cardlark never asks for a bank login. Add the offer in your bank’s app, then save it in Cardlark with its end date (or paste its wording to fill it in). Cardlark counts it on the Pay screen and reminds you before it ends.</p></details>
+    <details><summary>Why didn’t I get a reminder?</summary><p>Check that reminders are on in Cardlark’s Settings and that notifications for Cardlark are allowed in the Settings app. iOS keeps a limited number waiting, so Cardlark plans the next ones each time you open it.</p></details>
+    <details><summary>When do credits reset?</summary><p>Monthly, quarterly, twice a year or each calendar year, as the issuer describes. Card-member-year credits reset with the anniversary month you set on the card. Some issuers reset on a statement date instead, so allow a day or two.</p></details>
+    <h2>About the estimates</h2>
+    <details><summary>Is this financial advice?</summary><p>No. Cardlark is an estimator, not financial advice. Its numbers are estimates from issuers’ public card terms; issuers change rates and stores don’t always code the way you’d expect, so your card’s terms are what count. Cardlark is not affiliated with any bank or card network, and card names are trademarks of their owners.</p></details>
+    <h2>Cardlark Pro</h2>
+    <details><summary>What does Pro add?</summary><p>Unlimited cards (free: 3) and active saved offers (free: 5), credit logging and reminders before unused credits reset, custom cards, and backup and restore. Every ranking is free. Pro is a one-time purchase with Family Sharing, and there’s no subscription.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another iPhone or iPad?</summary><p>No. Sign in with the same Apple Account, open Settings in the app and tap <strong>Restore Purchase</strong>.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
