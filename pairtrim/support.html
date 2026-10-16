@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pairtrim Support</title>
+  <meta name="description" content="Help with Pairtrim for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#0b3440; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#2a9da8; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Pairtrim</span></a>
+      <h1>Support</h1>
+      <p class="meta">Clean up RAW and JPEG leftovers after a cull</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:k.fitzgerald310@gmail.com?subject=Pairtrim%20support">k.fitzgerald310@gmail.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Using Pairtrim</h2>
+    <details><summary>What does it find?</summary><p>RAW files whose JPEG or HEIC twin is gone (usually the shots you culled as JPEGs), JPEGs whose RAW is gone (the shots you culled as RAWs), and edit-settings sidecars (XMP, PP3, DOP, ON1, ACR, COS, AAE, THM) whose photo is gone. Complete pairs are listed too, and never offered for moving.</p></details>
+    <details><summary>Why is nothing ticked?</summary><p>On purpose: Pairtrim can’t know which format you culled in. Tick files, folders or whole groups, or use <strong>Tick › What did you cull?</strong> By default only folders that hold both RAW and JPEG files are listed, so a RAW-only or JPEG-only folder is never offered; change this in Settings › Matching.</p></details>
+    <details><summary>My JPEGs were renamed. Can it still pair them?</summary><p>Edited copies (-Edit, _edit-2, “ copy”, “ (1)”) count as the JPEG, and Canon’s _MG_1234 matches IMG_1234. For files renamed some other way, Pro can pair by capture time and camera.</p></details>
+    <details><summary>How do I undo a move?</summary><p>Open <strong>Restore</strong> in the sidebar and restore one session or all of them, even after a relaunch. A file that’s back in its original place is never overwritten; it stays in the review folder and is marked as waiting.</p></details>
+    <details><summary>I use Lightroom or Capture One.</summary><p>They keep their own list of your photos, so files Pairtrim moves will show as missing there. Restore puts them back. Pairtrim refuses folders that contain a Lightroom or Capture One catalog.</p></details>
+    <h2>Pairtrim Pro</h2>
+    <details><summary>What’s free, and what does Pro add?</summary><p>The full scan and report and Restore work without a key, and you can move up to 25 files from each folder in total. Pro moves any number of files and pairs renamed files by capture time. It’s a one-time purchase on Gumroad, with no subscription.</p></details>
+    <details><summary>Where do I enter my license key?</summary><p>Choose <strong>Pairtrim › Settings…</strong>, open the <strong>Pro</strong> tab, paste the key from your Gumroad receipt and click Activate.</p></details>
+    <details><summary>How do I get updates?</summary><p>Pairtrim checks for updates on its own; you can also choose <strong>Check for Updates…</strong> from the Pairtrim menu. Updates are free.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Gumroad handles payment. Reply to your Gumroad receipt or email <a href="mailto:k.fitzgerald310@gmail.com?subject=Pairtrim%20refund">k.fitzgerald310@gmail.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. One license key works on up to 3 of your Macs. Download the app again from your Gumroad receipt or library and enter the same key.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
