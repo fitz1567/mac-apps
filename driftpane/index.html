@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Driftpane Privacy Policy</title>
-  <meta name="description" content="Privacy policy for Driftpane for Mac. Driftpane does not collect your data. Your settings and your place for the weather stay on your Mac.">
+  <meta name="description" content="Privacy policy for Driftpane for Mac. Driftpane sends nothing to us; if you set a place for the weather, only its approximate coordinates go to MET Norway for the forecast. Your settings stay on your Mac.">
   <style>
 :root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#06233a; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
 @media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#1a7f9a; } }
@@ -44,16 +44,16 @@ footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); 
       <p class="meta">Effective September 29, 2026</p>
       <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
     </header>
-    <div class="summary"><strong>The short version: Driftpane does not collect your data.</strong><p>No accounts, ads, analytics or tracking, and nothing is sent to us.</p></div>
+    <div class="summary"><strong>The short version: Driftpane sends nothing to us; if you set a place for the weather, only its approximate coordinates go to MET Norway for the forecast.</strong><p>No accounts, ads, analytics or tracking, and nothing is sent to us.</p></div>
     <p>This policy explains how Driftpane (“the app”), a Mac app that draws live 3D scenes on your desktop, behind your icons, developed by Kevin Fitzgerald, handles information.</p>
     <h2>Information we collect</h2>
-    <p>None. Driftpane does not collect, store, sell or share personal information on any server, and it does not include analytics, advertising, crash-reporting or tracking tools of any kind.</p>
+    <p>Nothing is sent to us. One thing leaves your Mac, and only if you set a place for the weather: that place’s approximate coordinates (the coordinates Apple’s geocoder gives for the city or ZIP code you typed, or your position from Location Services rounded to about a kilometer), sent to MET Norway (api.met.no) with each forecast request so it can return the forecast for that spot. They aren’t linked to you, used for tracking or advertising, or sent anywhere else. When you type a place, Apple’s geocoder receives the text to find it. Driftpane has no analytics, advertising, crash-reporting or tracking tools.</p>
     <h2>Information stored on your Mac</h2>
     <p>To work, the app keeps the following on your Mac only:</p>
-    <ul><li>Your settings: the scene you picked, each scene’s options, Shuffle Daily, power, quality and idle-scene choices</li><li>The place you typed for the weather (a city or ZIP code) and its coordinates, rounded to about a kilometer</li><li>The last weather forecast, so scenes keep the weather for a while offline</li><li>Your license key, in your Mac’s Keychain</li></ul>
+    <ul><li>Your settings: the scene you picked, each scene’s options, Shuffle Daily, power, quality and idle-scene choices</li><li>The place for the weather: the city or ZIP code you typed and its coordinates, or your position from Location Services rounded to about a kilometer</li><li>The last weather forecast, so scenes keep the weather for a while offline</li><li>Your license key, in your Mac’s Keychain</li></ul>
     <p>Your settings and place are in Driftpane’s preferences, the last forecast is in its Caches folder (both inside its own container in your user Library, under Containers) and the license key is in your Keychain. None of it is sent to us. Clearing the place in Settings › Weather removes it; deleting the app and its container removes the rest.</p>
     <h2>Your location (optional)</h2>
-    <p>Driftpane works without a place: scenes then use fair weather and the sky for your time zone. For the real weather and sky, type a city or ZIP code in Settings › Weather, which Apple’s geocoder turns into coordinates (no permission needed), or turn on <strong>Use my location</strong>, which asks macOS for Location Services. Driftpane rounds your position to about a kilometer and uses it only on your Mac, to work out the sun and moon and to ask for the forecast. You can turn it off at any time.</p>
+    <p>Driftpane works without a place: scenes then use fair weather and the sky for your time zone. For the real weather and sky, type a city or ZIP code in Settings › Weather, which Apple’s geocoder turns into coordinates (no permission needed), or turn on <strong>Use my location</strong>, which asks macOS for Location Services. Driftpane rounds your position to about a kilometer. It works out the sun and moon on your Mac, and only the coordinates go to MET Norway to ask for the forecast (below). You can turn it off, or clear the place, at any time.</p>
     <h2>Weather</h2>
     <p>While a scene that shows weather is on screen and a place is set, Driftpane asks MET Norway (api.met.no) for the forecast at that place, at most once an hour. The request carries only the coordinates, cut to 4 decimal places, and the app’s name and version. Weather data: MET Norway, CC BY 4.0. Earth from Orbit uses NASA’s Blue Marble and Black Marble imagery (NASA Earth Observatory), bundled with the app; it doesn’t download anything.</p>
     <h2>Network</h2>
