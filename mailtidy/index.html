@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mailtidy Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Mailtidy for Mac. Mailtidy does not collect your data. Your mail never leaves your Mac: it talks only to your mail provider, and there is no account and no analytics.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#0f6e8c; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#3b4fb8; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Mailtidy</span></a>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective September 29, 2026</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>The short version: Mailtidy does not collect your data.</strong><p>No accounts, ads, analytics or tracking, and nothing is sent to us.</p></div>
+    <p>This policy explains how Mailtidy (“the app”), a free Mac app that cleans junk, newsletters and old mail out of Gmail and Yahoo Mail, developed by Kevin Fitzgerald, handles information.</p>
+    <h2>Information we collect</h2>
+    <p>None. Mailtidy does not collect, store, sell or share personal information on any server, and it does not include analytics, advertising, crash-reporting or tracking tools of any kind.</p>
+    <h2>Information stored on your Mac</h2>
+    <p>To work, the app keeps the following on your Mac only:</p>
+    <ul><li>Your sign-in for each mail account you connect: the email address in the app’s settings, and the app password in your Mac’s Keychain</li><li>Your choices: protected and kept senders, the people you have written to (addresses from your Sent folder’s To and Cc lines, for auto-protect), blocked and hidden senders, saved rules and the cleanup schedule</li><li>A history of what it moved (message IDs, so Undo can put mail back, plus counts and sizes for the Stats screen)</li></ul>
+    <p>It stays in ~/Library/Application Support/Mailtidy and your Keychain on your Mac and is never sent to us. While Mailtidy runs, the mail headers it reads are kept in memory only. “Try it first” uses made-up mail in a temporary folder that is deleted when the demo ends.</p>
+    <h2>Your mail</h2>
+    <p>Mailtidy connects straight from your Mac to Gmail (imap.gmail.com) or Yahoo Mail (imap.mail.yahoo.com) over an encrypted connection, signing in with an app password you make. It reads message headers (sender, subject, date, size, mailing-list headers), and for Gmail the short preview line Gmail shows, to sort mail and to notice questions waiting on your reply. It never reads attachments, never sends or forwards mail, and never deletes mail permanently: it only moves mail to your Trash (or a folder you pick), and every move can be undone.</p>
+    <h2>Gmail and Yahoo access</h2>
+    <p>Mailtidy uses standard IMAP with an app password, which you can remove at any time in your Google or Yahoo account settings. With it Mailtidy can list your folders, read headers, move messages between folders (Inbox, Trash, Spam, your own folders), mark messages read or unread and create a folder for hidden senders. One-click unsubscribe, when you choose it, sends the single web request the sender’s own unsubscribe header asks for, and nothing else.</p>
+    <h2>On-device sorting</h2>
+    <p>If Apple Intelligence is on, Mailtidy can ask Apple’s on-device model for a second opinion on a sender it isn’t sure about. That runs on your Mac; nothing is sent anywhere.</p>
+    <h2>Notifications</h2>
+    <p>If you turn on scheduled cleanup, macOS asks whether Mailtidy may show notifications. They say how many emails moved and which groups, never who sent them or what they say.</p>
+    <h2>Network</h2>
+    <p>Besides your mail provider and the unsubscribe requests you choose, the only network requests are checks for app updates at fitztoppicks.com. Mailtidy is a free download through Gumroad; tips through Ko-fi are optional and handled by Ko-fi.</p>
+    <h2>Children’s privacy</h2>
+    <p>Because the app collects no personal information from anyone, it does not knowingly collect personal information from children.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date. If the app ever begins collecting data, this policy will be updated before that happens.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app: <a href="mailto:help@fitztoppicks.com">help@fitztoppicks.com</a>.</p>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
