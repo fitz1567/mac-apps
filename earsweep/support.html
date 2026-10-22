@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EarSweep Support</title>
+  <meta name="description" content="Help with EarSweep for web browsers.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#1f9e88; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#3cc6ae; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>EarSweep</span></a>
+      <h1>Support</h1>
+      <p class="meta">EQ ear training in your browser</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:help@fitztoppicks.com?subject=EarSweep%20support">help@fitztoppicks.com</a> with your browser and its version.</p></div>
+    <h2>Getting started</h2>
+    <details><summary>How do I start?</summary><p>Open <strong>Today</strong> and press <strong>Play</strong> (or P or Space). A hidden EQ boost is on one band: switch between <strong>Flat</strong> and <strong>EQ</strong> (or press F) to compare, then pick the band (or press 1–9). After you answer, tap any band to hear it. Ten questions make the daily drill.</p></details>
+    <details><summary>I don’t hear anything</summary><p>Press Play once the page has loaded: browsers start sound only after you click or tap. Check your device volume and where the sound goes (headphones or speakers). On iPhone and iPad, also check Silent mode, which can mute web pages.</p></details>
+    <details><summary>Which sound should I practice with?</summary><p>Start with pink noise: every band is easy to hear in it. Then move to the drum, bass, pad or full-mix loops, which sound more like a real mix. The bass loop only asks about the bands it really has (63 Hz to 2 kHz).</p></details>
+    <details><summary>Can I install it or use it offline?</summary><p>Yes. Use your browser’s Install or Add to Home Screen option. After your first visit it works offline, and EarSweep Pro stays on for up to 30 days without a connection.</p></details>
+    <h2>Listening safety</h2>
+    <details><summary>Is it safe for my ears?</summary><p>Keep the volume low and comfortable. A limiter is always on, and the volume slider starts low and stops short of full scale, but no limiter can make a loud setting safe. Use your device’s own limit too: on iPhone, Settings › Sounds &amp; Haptics › Headphone Safety › Reduce Loud Audio; on Android, the volume warning or a media volume limit. Take a break every 30 to 45 minutes, and stop for the day if your ears ring or feel dull.</p></details>
+    <h2>Your progress and songs</h2>
+    <details><summary>Where is my progress kept? Can I move it to another device?</summary><p>In this browser on this device only. There’s no account or sync, so another browser or device starts fresh, and a private window keeps nothing after you close it.</p></details>
+    <details><summary>How do I practice with my own songs?</summary><p>With EarSweep Pro, open <strong>Practice</strong>, choose your songs as the sound and add an audio file your browser can play (MP3, WAV and AAC work almost everywhere). Up to 5 songs of up to 80 MB each are kept in your browser, and they’re never uploaded.</p></details>
+    <details><summary>How do I delete my data?</summary><p>Choose <strong>Erase my data</strong> on the Progress tab. It removes your progress, streak, history, settings, songs and license key from this browser.</p></details>
+    <h2>EarSweep Pro</h2>
+    <details><summary>How do I unlock Pro?</summary><p>Your license key is on the page after you buy and in your Gumroad receipt. In EarSweep, open <strong>Pro</strong>, paste the key under <strong>Have a key?</strong> and press <strong>Unlock Pro</strong>.</p></details>
+    <details><summary>On how many devices can I use it?</summary><p>One key works on up to 5 of your devices (each browser you unlock counts as one). If you need more, email help@fitztoppicks.com with your Gumroad receipt.</p></details>
+    <details><summary>It says my key isn’t valid, or Pro turned off</summary><p>Copy the key again from your Gumroad receipt, with no spaces. Pro turns off when a membership ends, is refunded or a renewal payment fails; renewing or updating your card in Gumroad turns it back on, and <strong>Check again</strong> on the Pro tab picks that up.</p></details>
+    <details><summary>How do I cancel?</summary><p>Use the <strong>Manage membership</strong> link in your Gumroad receipt, or open EarSweep Pro in your Gumroad library, and cancel there. Pro keeps working until the end of the year you paid for, and you aren’t charged again.</p></details>
+    <details><summary>How do I get a refund?</summary><p>Within 14 days of your first payment, reply to your Gumroad receipt or email <a href="mailto:help@fitztoppicks.com?subject=EarSweep%20refund">help@fitztoppicks.com</a> for a full refund. Renewals aren't refunded, so cancel any time before your renewal date in your Gumroad library and Pro stays on until then.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. iPhone, iPad and Safari are trademarks of Apple Inc.; Android and Chrome are trademarks of Google LLC. Used here for identification only.</footer>
+  </main>
+</body>
+</html>
