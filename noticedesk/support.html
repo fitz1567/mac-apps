@@ -41,16 +41,19 @@ footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); 
     <header>
       <a class="brand" href="./"><img src="icon.png" alt=""><span>NoticeDesk</span></a>
       <h1>Support</h1>
-      <p class="meta">License reports for your dependencies</p>
+      <p class="meta">License reports for your dependencies and fonts</p>
       <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
     </header>
     <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:help@fitztoppicks.com?subject=NoticeDesk%20support">help@fitztoppicks.com</a> with your Mac model and macOS version.</p></div>
     <h2>Using NoticeDesk</h2>
     <details><summary>Which projects can it read?</summary><p>Swift packages (Package.resolved, also inside Xcode projects and workspaces), npm (package-lock.json or npm-shrinkwrap.json) and Python (requirements files, poetry.lock and an installed virtual environment).</p></details>
     <details><summary>Why does a Swift package say “no license file”?</summary><p>Its license file is read from the checked-out package. Build the project once in Xcode so the packages are checked out, or choose <strong>Add Checkouts Folder…</strong> if they’re somewhere else.</p></details>
-    <details><summary>Is the report legal advice?</summary><p>No. It shows what the dependency files and license texts say, with plain-language notes. Packages sometimes misstate their licenses; have anything flagged reviewed before you rely on it.</p></details>
+    <details><summary>What does the Fonts scan check?</summary><p>What each font file says about itself: its embedding bits, copyright, license text and URL, and whether it came with macOS. Each font is marked likely OK to embed, restricted or unknown, with the reasons. Choose <strong>Help › How NoticeDesk Checks Fonts</strong> for the rules. It can’t see the license you bought, so record that in the font’s notes.</p></details>
+    <details><summary>How do I put fonts in the release report?</summary><p>In Fonts, scan the folder with the fonts you ship or check the PDF you sell. Then choose <strong>File › Release Report…</strong> and pick that folder or PDF under “Fonts in this release”. The PDF report ends with the font audit and NOTICE.txt with a font license summary.</p></details>
+    <details><summary>Is the report legal advice?</summary><p>No. It shows what the dependency files, license texts and fonts say, with plain-language notes. Packages and fonts sometimes misstate their licenses; have anything flagged reviewed before you rely on it.</p></details>
     <h2>NoticeDesk Pro</h2>
-    <details><summary>What’s free, and what does Pro add?</summary><p>Free: one ecosystem at a time, every dependency with its license, flags and notes on screen. Pro adds every ecosystem in one scan and the exports: the PDF report, NOTICE.txt, CSV and JSON. It’s a one-time purchase on Gumroad, with no subscription.</p></details>
+    <details><summary>What’s free, and what does Pro add?</summary><p>Free: one code ecosystem at a time with every dependency, its license, flags and notes on screen, and the font check of installed fonts and font folders. Pro adds every ecosystem in one scan, the exports (PDF report, NOTICE.txt, CSV and JSON), checking PDFs, font license notes, font audits and the release report. It’s a one-time purchase on Gumroad, with no subscription.</p></details>
+    <details><summary>I bought FontWarden. Does my key work?</summary><p>Yes. Paste your FontWarden license key into <strong>NoticeDesk › Settings… › License</strong>: it unlocks the font features (checking PDFs, license notes and font audits). The code scan’s Pro and the release report need a NoticeDesk key. FontWarden keeps working as before, and your FontWarden notes are copied into NoticeDesk the first time you open Fonts.</p></details>
     <details><summary>Where do I enter my license key?</summary><p>Choose <strong>NoticeDesk › Settings…</strong>, open the <strong>License</strong> tab, paste the key from your Gumroad receipt and click Activate.</p></details>
     <details><summary>How do I get updates?</summary><p>NoticeDesk checks for updates on its own; you can also choose <strong>Check for Updates…</strong> from the NoticeDesk menu. Updates are free.</p></details>
     <h2>Purchases</h2>

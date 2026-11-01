@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NoticeDesk Privacy Policy</title>
-  <meta name="description" content="Privacy policy for NoticeDesk for Mac. NoticeDesk does not collect your data. It reads your project on your Mac and never uploads it.">
+  <meta name="description" content="Privacy policy for NoticeDesk for Mac. NoticeDesk does not collect your data. It reads your projects and fonts on your Mac and never uploads them.">
   <style>
 :root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#12508f; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
 @media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#5a96d4; } }
@@ -45,17 +45,19 @@ footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); 
       <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
     </header>
     <div class="summary"><strong>The short version: NoticeDesk does not collect your data.</strong><p>No accounts, ads, analytics or tracking, and nothing about you or your work is sent to us.</p></div>
-    <p>This policy explains how NoticeDesk (“the app”), a Mac app that lists the open-source licenses in a project’s dependencies and writes license reports and NOTICE files, developed by Kevin Fitzgerald, handles information.</p>
+    <p>This policy explains how NoticeDesk (“the app”), a Mac app that lists the open-source licenses in a project’s dependencies, checks what fonts say about their licenses, and writes license reports and NOTICE files, developed by Kevin Fitzgerald, handles information.</p>
     <h2>Information we collect</h2>
     <p>None. NoticeDesk does not collect, store, sell or share personal information on any server, and it does not include analytics, advertising, crash-reporting or tracking tools of any kind.</p>
     <h2>Information stored on your Mac</h2>
     <p>To work, the app keeps the following on your Mac only:</p>
-    <ul><li>Your settings: the “prepared by” name for reports and whether dev-only packages are included</li><li>Your license key, in your Mac’s Keychain</li></ul>
-    <p>Settings are in NoticeDesk’s preferences and the license key is in your Keychain. Scan results are kept in memory while the window is open. Reports, NOTICE files, CSV and JSON are written only where you choose to save them.</p>
+    <ul><li>Your settings: the “prepared by” name for reports, whether dev-only packages are included, and the font folders you added</li><li>Your font license notes and the license files or receipts you attach to them, in NoticeDesk’s folder in Application Support</li><li>Your license key, in your Mac’s Keychain</li></ul>
+    <p>Settings are in NoticeDesk’s preferences, font license notes and attached files in NoticeDesk’s folder in Application Support (a copy of an attached file is kept there), and the license key in your Keychain. Scan results are kept in memory while the window is open. Reports, NOTICE files, CSV, JSON and font audits are written only where you choose to save them.</p>
     <h2>Your projects</h2>
     <p>NoticeDesk only reads: lockfiles, package metadata and license files in the folder you choose, Xcode’s checked-out packages for that project, and a Python environment you point it to. It never writes into a project.</p>
+    <h2>Your fonts and PDFs</h2>
+    <p>The Fonts scan reads the font files installed on your Mac, font folders you add and PDFs you choose, only to show what each font says about its license. It never changes a font or a PDF. If FontWarden was used on this Mac, its font license notes, attached files and font folders are copied into NoticeDesk once, the first time you open Fonts; FontWarden’s own copies are left as they are.</p>
     <h2>Network</h2>
-    <p>NoticeDesk is sold directly through Gumroad, and its only network requests are the license check with Gumroad (your license key, when you enter it and about once a week) and checks for app updates at fitztoppicks.com. Neither sends anything about your projects. Licenses are identified offline, from texts bundled with the app.</p>
+    <p>NoticeDesk is sold directly through Gumroad, and its only network requests are the license check with Gumroad (your license key, when you enter it and about once a week; a FontWarden key is checked against FontWarden’s product) and checks for app updates at fitztoppicks.com. Neither sends anything about your projects or fonts. Licenses are identified offline, from texts bundled with the app.</p>
     <h2>Purchases</h2>
     <p>NoticeDesk is sold directly through Gumroad, which handles payment and sends your receipt and license key; we never see your payment details. The app sends your license key to Gumroad to check it (when you enter it and about once a week); that is all it sends to Gumroad.</p>
     <h2>Children’s privacy</h2>
