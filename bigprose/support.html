@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bigprose Support</title>
+  <meta name="description" content="Help with Bigprose for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#10245e; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#4c78e0; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Bigprose</span></a>
+      <h1>Support</h1>
+      <p class="meta">Clean large print: documents, songbooks and set lists</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:help@fitztoppicks.com?subject=Bigprose%20support">help@fitztoppicks.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Documents</h2>
+    <details><summary>What can it read?</summary><p>Word (.docx), RTF, plain text (.txt), Markdown (.md) and PDFs that are mostly text, including two-column newsletters and bulletins. Older Word .doc files need saving as .docx first.</p></details>
+    <details><summary>Why won’t it open my PDF?</summary><p>Some PDFs are pictures of pages (a scan or a photo) with no text inside. Bigprose can only re-flow text it can read, so it says so instead of guessing. If you can select the words in Preview, Bigprose can read it; otherwise use the original Word or text file.</p></details>
+    <details><summary>What happens to tables and pictures?</summary><p>Tables stay tables when their columns fit at the size you chose, and are listed row by row (“Time: 9:00 · Activity: Bingo”) when they don’t. Pictures grow with the text, up to the page width, or can be left out. Tables in PDFs are rebuilt from where the words sit, so check them against the original.</p></details>
+    <details><summary>Is it an accessibility tool?</summary><p>It makes clear large-print copies for reading and printing. It doesn’t certify that a document meets accessibility or medical-reading standards.</p></details>
+    <h2>Songbooks</h2>
+    <details><summary>Which song files can I import?</summary><p>Choose <strong>Songbook</strong> at the top of the window, then <strong>File › Import Songs…</strong>: ChordPro files (.cho, .chopro, .chordpro, .crd, .pro) and plain text (.txt) with the chords on their own line above the words. Text files are converted on the way in, and you can edit any song afterwards.</p></details>
+    <details><summary>How do I change a song’s key?</summary><p>In a songbook or set list, click the key next to the song and pick another; each song keeps its own key in each book. The Capo menu prints the shapes you play with a capo, and the page still shows the real key.</p></details>
+    <details><summary>How do I print a booklet?</summary><p>Choose <strong>Booklet</strong> above the preview, then print two-sided and flip on the short edge. Stack the sheets in order, fold them in half together and staple on the fold.</p></details>
+    <details><summary>I used Chordbinder. Can I bring my songs?</summary><p>Yes: choose <strong>File › Import Chordbinder Library…</strong> and pick Chordbinder’s library.json. Its songs, songbooks and set lists are added; songs you already have aren’t added twice.</p></details>
+    <h2>Bigprose Pro</h2>
+    <details><summary>What’s free, and what does Pro add?</summary><p>Everything works without a key, for 2 large-print document copies (saved or printed) a day and songbooks and set lists of up to 5 songs. Pro removes both limits. It’s a one-time purchase on Gumroad, with no subscription.</p></details>
+    <details><summary>Where do I enter my license key?</summary><p>Choose <strong>Bigprose › Settings…</strong>, open the <strong>Pro</strong> tab, paste the key from your Gumroad receipt and click Activate.</p></details>
+    <details><summary>How do I get updates?</summary><p>Bigprose checks for updates on its own; you can also choose <strong>Check for Updates…</strong> from the Bigprose menu. Updates are free.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Gumroad handles payment. Reply to your Gumroad receipt or email <a href="mailto:help@fitztoppicks.com?subject=Bigprose%20refund">help@fitztoppicks.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. One license key works on up to 3 of your Macs. Download the app again from your Gumroad receipt or library and enter the same key.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
