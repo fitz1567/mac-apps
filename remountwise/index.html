@@ -56,6 +56,8 @@ footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); 
     <p>Remountwise runs outside Apple’s App Sandbox because clearing a frozen network connection needs a forced unmount, which the sandbox doesn’t allow. It mounts shares through macOS’s own NetFS, looks at their folders in /Volumes with a short timeout, and knocks on the server’s file-sharing port to see whether it’s awake. Nothing about your shares or files is uploaded.</p>
     <h2>Wi-Fi name and location</h2>
     <p>Wi-Fi rules need the name of the network you’re on, which macOS gives only to apps allowed to use Location Services. Remountwise asks only when you add a Wi-Fi rule, reads the network name, and never reads or stores your location.</p>
+    <h2>Local network</h2>
+    <p>To see whether your file server is awake before it reconnects your shares, Remountwise knocks on the server’s file-sharing port on your local network, and looks up .local server names with Bonjour. On macOS 15 and later, macOS asks for your permission the first time; if you say no, Remountwise can’t tell whether the server is awake, and it tells you the setting is off. You can change your answer in System Settings › Privacy & Security › Local Network. Nothing is sent anywhere but your own server.</p>
     <h2>Network</h2>
     <p>Remountwise is sold directly through Gumroad, and its only internet requests are the license check with Gumroad (your license key, when you enter it and about once a week) and checks for app updates at fitztoppicks.com. Neither sends anything about your shares.</p>
     <h2>Updates and license checks</h2>

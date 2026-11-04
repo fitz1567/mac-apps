@@ -50,8 +50,8 @@ footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); 
     <p>None. KeySieve does not collect, store, sell or share personal information on any server, and it does not include analytics, advertising, crash-reporting or tracking tools of any kind.</p>
     <h2>Information stored on your Mac</h2>
     <p>To work, the app keeps the following on your Mac only:</p>
-    <ul><li>The list of project folders you add</li><li>Your settings, such as whether history is included</li><li>Your license key, in your Mac’s Keychain</li></ul>
-    <p>The folder list is a file in your user Library (Application Support, under com.fitz1567.keysieve), settings are in its preferences and the license key is in your Keychain. Findings are kept in memory only, never written to disk or logged, and values are always masked (first 4 characters only). Reports are written only where you save them.</p>
+    <ul><li>The list of project folders you add</li><li>Your settings, such as whether history is included</li><li>For the Repo Status widget: each repository’s folder name, its open-finding count and whether its hook is on (never file paths or key values)</li><li>Your license key, in your Mac’s Keychain</li></ul>
+    <p>The folder list is a file in your user Library (Application Support, under com.fitz1567.keysieve), settings are in its preferences, the widget’s names and counts are in KeySieve’s shared App Group storage on your Mac, and the license key is in your Keychain. Findings are kept in memory only, never written to disk or logged, and values are always masked (first 4 characters only). Reports are written only where you save them.</p>
     <h2>Your repositories</h2>
     <p>KeySieve reads the files and git history of the folders you add, running git read-only. It writes to a project only when you ask: a line in .gitleaksignore, or the pre-commit hook, each shown before it’s written. It never runs the clean-up commands it suggests.</p>
     <h2>Network</h2>
