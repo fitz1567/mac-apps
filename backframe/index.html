@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Backframe Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Backframe for Mac. Backframe does not collect your data. Your screen history stays on your Mac, encrypted.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#0A6E7E; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#3E4FB8; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Backframe</span></a>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective September 29, 2026</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>The short version: Backframe does not collect your data.</strong><p>No accounts, ads, analytics or tracking, and nothing about you or your work is sent to us.</p></div>
+    <p>This policy explains how Backframe (“the app”), a Mac app: an encrypted, searchable history of what was on your screen, kept on your Mac, developed by Kevin Fitzgerald, handles information.</p>
+    <h2>Information we collect</h2>
+    <p>None. Backframe does not collect, store, sell or share personal information on any server, and it does not include analytics, advertising, crash-reporting or tracking tools of any kind.</p>
+    <h2>Information stored on your Mac</h2>
+    <p>To work, the app keeps the following on your Mac only:</p>
+    <ul><li>Saved frames, only while capture is switched on (it starts off): a downscaled screenshot (at most 1600 pixels wide) of the display you're using, kept only when the screen changed, plus a small thumbnail</li><li>The text read from each frame on your Mac by Apple's Vision, with each line's position, and the window title, app name and time it was saved</li><li>A search index made of keyed hashes of word beginnings (never the words themselves)</li><li>Your settings (capture on or off, how often to look, the pause shortcut, excluded apps and title words, how long to keep frames and the disk cap)</li><li>Two items in your Mac's login Keychain: the random encryption key for your history, and your license key or free-trial start date</li></ul>
+    <p>Frames, text, the index and settings are in ~/Library/Application Support/Backframe on your Mac (history.sqlite, frames/ and config.json). Each frame's picture, thumbnail, text, window title and app name are encrypted with AES-256-GCM using keys derived from one random key that is made on your Mac and kept in your login Keychain, readable only on this Mac while it's unlocked and never synced. When frames were saved and how big they are is not hidden. Frames older than your limit (30 days by default) or past your disk cap (5 GB by default) are deleted automatically; Delete Everything removes the whole history and its key.</p>
+    <h2>Your Mac</h2>
+    <p>Backframe runs in Apple's App Sandbox and may write only its own folder, ~/Library/Application Support/Backframe. It looks at the screen only while you have capture switched on, using macOS's Screen Recording permission, and skips password managers, Messages, private browser windows, windows whose titles mention banking, anything while a password field is active, a locked screen, idle time and its own window, plus any app or title word you add. It never records audio, keystrokes or the pointer. The text in each frame is read on your Mac; nothing is uploaded, synced or shared.</p>
+    <h2>Network</h2>
+    <p>Backframe is sold directly through Gumroad, and its only network requests are the license check with Gumroad (your license key, when you enter it and about once a week), checks for app updates at fitztoppicks.com and the More Mac Apps list from fitztoppicks.com. None of them sends your frames, their text, your searches or anything about what was on your screen.</p>
+    <h2>Updates and license checks</h2>
+    <p>Backframe, downloaded directly from Gumroad or fitztoppicks.com and signed with Apple’s Developer ID, checks for app updates with Sparkle, a standard open-source updater: it downloads a small update list (an appcast) from fitztoppicks.com, which sees only the app’s version and, like any website, your internet address, and it downloads an update only when one is available and you choose to install it (or have turned on automatic updates). When you enter a license key, Backframe sends that key to Gumroad to verify it, and checks it again about once a week; that is all it sends to Gumroad. Neither sends anything about you, your files or how you use the app.</p>
+    <h2>Purchases</h2>
+    <p>Backframe is sold directly through Gumroad, which handles payment and sends your receipt and license key; we never see your payment details. The app sends your license key to Gumroad to check it (when you enter it and about once a week); that is all it sends to Gumroad.</p>
+    <h2>Children’s privacy</h2>
+    <p>Because the app collects no personal information from anyone, it does not knowingly collect personal information from children.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date. If the app ever begins collecting data, this policy will be updated before that happens.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app: <a href="mailto:help@fitztoppicks.com">help@fitztoppicks.com</a>.</p>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
