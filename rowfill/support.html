@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rowfill Support</title>
+  <meta name="description" content="Help with Rowfill for Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#0e3f36; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#3fa38a; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Rowfill</span></a>
+      <h1>Support</h1>
+      <p class="meta">Fill a PDF form from every spreadsheet row</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:help@fitztoppicks.com?subject=Rowfill%20support">help@fitztoppicks.com</a> with your Mac model and macOS version.</p></div>
+    <h2>Using Rowfill</h2>
+    <details><summary>What kind of PDF does it need?</summary><p>A fillable PDF (an AcroForm, the kind Acrobat, Preview and most form makers create): text boxes, checkboxes, radio buttons, pick lists and dates. A flat PDF works too: <strong>Prepare</strong> finds its lines and boxes and saves a fillable copy. XFA forms (made in LiveCycle or AEM Designer) can’t be filled on a Mac.</p></details>
+    <details><summary>What data can it read?</summary><p>CSV (comma, semicolon or tab) and Excel .xlsx files, any sheet, with column names in the first row. Each row becomes one filled PDF. Older .xls and Numbers files need saving as .xlsx or CSV first.</p></details>
+    <details><summary>How are checkboxes, dates and numbers filled?</summary><p>Yes, X, 1, true or ✓ ticks a box; blank, No, 0 or false leaves it clear. Dates are written in the format the form asks for (or the one you pick), and numbers in its number format. Anything it can’t read is filled as written and listed in the row’s report.</p></details>
+    <details><summary>What if text is too long for a field?</summary><p>The row is still written, and its report says which field is too long so you can check it.</p></details>
+    <h2>Rowfill Pro</h2>
+    <details><summary>What’s free, and what does Pro add?</summary><p>Everything works without a key for the first 10 rows of each batch. Pro fills every row. It’s a one-time purchase on Gumroad, with no subscription.</p></details>
+    <details><summary>Where do I enter my license key?</summary><p>Choose <strong>Rowfill › Settings…</strong>, open the <strong>Pro</strong> tab, paste the key from your Gumroad receipt and click Activate.</p></details>
+    <details><summary>How do I get updates?</summary><p>Rowfill checks for updates on its own; you can also choose <strong>Check for Updates…</strong> from the Rowfill menu. Updates are free.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Gumroad handles payment. Reply to your Gumroad receipt or email <a href="mailto:help@fitztoppicks.com?subject=Rowfill%20refund">help@fitztoppicks.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another Mac?</summary><p>No. One license key works on up to 3 of your Macs. Download the app again from your Gumroad receipt or library and enter the same key.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Console Bench Support</title>
+  <meta name="description" content="Help with Console Bench for iPhone, iPad or Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#2e7d32; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#7fd07a; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Console Bench</span></a>
+      <h1>Support</h1>
+      <p class="meta">Game console repair &amp; refurbs</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>Need a hand?</strong><p>Answers to common questions are below. If yours isn’t, email <a href="mailto:help@fitztoppicks.com?subject=Console%20Bench%20support">help@fitztoppicks.com</a> with your device model and iOS or iPadOS version.</p></div>
+    <h2>Fix It</h2>
+    <details><summary>Which consoles are covered?</summary><p>52 consoles and controllers: Nintendo (NES to the Switch family, Game Boy, DS and 3DS), Sega (Master System to Dreamcast), PlayStation 1–5, PSP and Vita, Xbox to Series X|S, and their controllers. Pick one in <strong>Fix It</strong>, or search by name (regional names like Mega Drive work too).</p></details>
+    <details><summary>Where do the guides come from?</summary><p>They’re written for Console Bench from general repair knowledge. They aren’t copied from service manuals or other guides, and they’re general advice: models and board revisions differ, so check yours, and stop when a guide says the job needs a repair shop. Repairs are at your own risk.</p></details>
+    <details><summary>Why do some guides ask me to confirm first?</summary><p>Advanced repairs (soldering, power supplies, batteries) list their safety notes first and ask you to confirm you’ve read them before the steps appear.</p></details>
+    <details><summary>Is Console Bench official?</summary><p>No. Console Bench isn’t affiliated with or endorsed by Nintendo, Sega, Sony or Microsoft. Their product names are used only to say which hardware a guide is for.</p></details>
+    <h2>Refurb</h2>
+    <details><summary>How is profit worked out?</summary><p>Profit = sale price + shipping the buyer paid − marketplace fees (the percentage on the whole order plus any fixed fee) − shipping you paid − what you paid for the unit − parts − other costs. Set your usual fee in <strong>Settings › Refurb defaults</strong>; check your marketplace’s current fees.</p></details>
+    <details><summary>How do I export my units?</summary><p><strong>Refurb</strong> › the share button, or <strong>Settings › Export</strong>. You get a CSV file for Numbers, Excel or Google Sheets.</p></details>
+    <h2>Shop</h2>
+    <details><summary>How do I get the customer’s signature?</summary><p>Open a ticket and tap <strong>Customer Signature</strong>. They sign with a finger, Apple Pencil or the mouse. Your drop-off terms from <strong>Settings › Your shop</strong> are shown above it and printed on the intake receipt.</p></details>
+    <details><summary>How do I send an invoice or a status update?</summary><p>In a ticket, open <strong>Documents</strong> for the intake receipt, quote, invoice or status report as a PDF to print or share. <strong>Send a Status Update</strong> writes a short message you can send by Messages or email.</p></details>
+    <details><summary>How does the warranty work?</summary><p>Set the warranty days on the ticket (the default is in Settings). It starts when you mark the ticket <strong>Picked up</strong>, and the Tickets list shows repairs still under warranty.</p></details>
+    <h2>Console Bench Pro</h2>
+    <details><summary>What’s free and what’s Pro?</summary><p>Free: every repair guide, 10 refurb units and 3 shop tickets. Pro is one purchase: unlimited units and tickets and the parts inventory. No subscription. Family Sharing is on, and one purchase covers iPhone, iPad and Mac.</p></details>
+    <details><summary>How do I restore Pro on a new device?</summary><p><strong>Settings › Restore Purchase</strong>, signed in with the same Apple Account.</p></details>
+    <h2>Purchases</h2>
+    <details><summary>How do I get a refund?</summary><p>Apple handles App Store refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p></details>
+    <details><summary>Do I have to pay again on another iPhone or iPad?</summary><p>No. Sign in with the same Apple Account, open Settings in the app and tap <strong>Restore Purchase</strong>.</p></details>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>

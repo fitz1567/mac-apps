@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mailcellar Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Mailcellar for Mac. Mailcellar does not collect your data. Your mail stays on your Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#2a0a10; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#b0453a; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Mailcellar</span></a>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective September 29, 2026</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>The short version: Mailcellar does not collect your data.</strong><p>No accounts, ads, analytics or tracking, and nothing about you or your work is sent to us.</p></div>
+    <p>This policy explains how Mailcellar (“the app”), a Mac app that opens Outlook PST and OST files, MBOX and EML files and Apple Mail exports, to browse, read, search and export old mail without Outlook, developed by Kevin Fitzgerald, handles information.</p>
+    <h2>Information we collect</h2>
+    <p>None. Mailcellar does not collect, store, sell or share personal information on any server, and it does not include analytics, advertising, crash-reporting or tracking tools of any kind.</p>
+    <h2>Information stored on your Mac</h2>
+    <p>To work, the app keeps the following on your Mac only:</p>
+    <ul><li>A search index for each archive you open (the senders, recipients, subjects, dates, message text and attachment names), in Mailcellar’s own folder on your Mac</li><li>A few settings (how messages are shown first, the message list’s columns)</li><li>Your license key, in your Mac’s Keychain</li></ul>
+    <p>The search indexes are in Mailcellar’s App Sandbox container (Library/Caches/Mailcellar/Index); delete them any time in Settings, and they’re rebuilt when needed. Attachments you preview with Quick Look are copied to a temporary folder in the same container and deleted when the archive closes and when Mailcellar quits. Exports and saved attachments are new files, written only where you choose.</p>
+    <h2>Your files</h2>
+    <p>Mailcellar runs in Apple’s App Sandbox, so it can open only the archives and folders you pick or drop on it, and save only where you choose. It only reads your archives and never changes them. A password-protected PST is opened only after you type its password; the password is checked on your Mac and never stored.</p>
+    <h2>HTML mail</h2>
+    <p>Messages are shown with JavaScript turned off, and pictures and other content on the internet are blocked until you click <strong>Load Images</strong> for that message, so opening old mail doesn’t tell senders you read it. Clicking a link opens it in your browser.</p>
+    <h2>Network</h2>
+    <p>Mailcellar is sold directly through Gumroad, and its only network requests are the license check with Gumroad (your license key, when you enter it and about once a week), checks for app updates at fitztoppicks.com, and the pictures of a message after you click Load Images. None of them sends anything about your mail.</p>
+    <h2>Open source</h2>
+    <p>Mailcellar reads Outlook files with libpff by Joachim Metz, used under the GNU Lesser General Public License, version 3 or later. The exact source and build script are at <a href="https://fitztoppicks.com/mac/mailcellar/source/">fitztoppicks.com/mac/mailcellar/source</a>; see <strong>Help › Acknowledgements and Licenses</strong> in the app.</p>
+    <h2>Updates and license checks</h2>
+    <p>Mailcellar, downloaded directly from Gumroad or fitztoppicks.com and signed with Apple’s Developer ID, checks for app updates with Sparkle, a standard open-source updater: it downloads a small update list (an appcast) from fitztoppicks.com, which sees only the app’s version and, like any website, your internet address, and it downloads an update only when one is available and you choose to install it (or have turned on automatic updates). When you enter a license key, Mailcellar sends that key to Gumroad to verify it, and checks it again about once a week; that is all it sends to Gumroad. Neither sends anything about you, your files or how you use the app.</p>
+    <h2>Purchases</h2>
+    <p>Mailcellar is sold directly through Gumroad, which handles payment and sends your receipt and license key; we never see your payment details. The app sends your license key to Gumroad to check it (when you enter it and about once a week); that is all it sends to Gumroad.</p>
+    <h2>Children’s privacy</h2>
+    <p>Because the app collects no personal information from anyone, it does not knowingly collect personal information from children.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date. If the app ever begins collecting data, this policy will be updated before that happens.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app: <a href="mailto:help@fitztoppicks.com">help@fitztoppicks.com</a>.</p>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
