@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tumblecrest Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Tumblecrest for Mac. Tumblecrest works fully offline and collects nothing unless you choose to play online. Your progress, replays and settings stay on your Mac.">
+  <style>
+:root { --bg:#f6f7f9; --surface:#fff; --stroke:#e1e4ea; --text:#1b1f2a; --text-2:#545b6b; --accent:#2a2f4a; --soft:color-mix(in srgb, var(--accent) 10%, var(--surface)); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f1218; --surface:#191d26; --stroke:#323949; --text:#f2f5fa; --text-2:#a5afc4; --accent:#f2b640; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { margin-bottom:32px; }
+.brand { display:flex; align-items:center; gap:14px; margin-bottom:18px; text-decoration:none; color:inherit; }
+.brand img { width:56px; height:56px; }
+.brand span { font-weight:700; font-size:20px; }
+h1 { font-size:clamp(30px, 6vw, 40px); line-height:1.15; margin:0 0 8px; }
+.meta { color:var(--text-2); margin:0; }
+.summary { background:var(--soft); border:1px solid var(--stroke); border-radius:18px; padding:20px 22px; margin:0 0 36px; }
+.summary strong { display:block; font-size:19px; margin-bottom:4px; }
+.summary p { margin:0; }
+h2 { font-size:22px; line-height:1.3; margin:40px 0 10px; }
+h3 { font-size:18px; margin:26px 0 6px; }
+ul { padding-left:22px; margin:10px 0; }
+li { margin:6px 0; }
+a { color:var(--accent); text-underline-offset:3px; }
+nav { display:flex; gap:18px; flex-wrap:wrap; margin-top:14px; }
+details { background:var(--surface); border:1px solid var(--stroke); border-radius:14px; padding:12px 16px; margin:10px 0; }
+summary { cursor:pointer; font-weight:600; }
+details p { margin:10px 0 2px; }
+.apps { display:grid; gap:14px; }
+.app { display:flex; gap:16px; align-items:center; background:var(--surface); border:1px solid var(--stroke); border-radius:18px; padding:16px; }
+.app img { width:64px; height:64px; flex:none; }
+.app p { margin:2px 0 0; color:var(--text-2); }
+footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--stroke); color:var(--text-2); font-size:15px; }</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./"><img src="icon.png" alt=""><span>Tumblecrest</span></a>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective November 15, 2026</p>
+      <nav><a href="./">Privacy Policy</a><a href="support.html">Support</a><a href="terms.html">Terms</a><a href="../">All apps</a></nav>
+    </header>
+    <div class="summary"><strong>The short version: Tumblecrest works fully offline and collects nothing unless you choose to play online.</strong><p>Offline play sends nothing. Online play (optional, with the full game) needs no email, real name or password: our server keeps a made-up player name, your Mac’s public key, your online levels and results, and a scrambled form of your license key.</p></div>
+    <p>This policy explains how Tumblecrest (“the app”), a Mac game: an original platform fighter for 1 to 4 players, developed by Kevin Fitzgerald, handles information.</p>
+    <h2>Information we collect</h2>
+    <p>Nothing when you play offline. If you play online: a random account id, your player name and your Mac’s public key (to sign you in); your online levels, ranked results and leaderboard standing; a scrambled (keyed-hash) form of your license key with Gumroad’s last answer about it (valid or refunded; nothing else from Gumroad’s reply is kept); and, only for a match whose result is disputed, that match’s inputs for 30 days. Your network address is used while you’re connected, to carry the match, limit abuse and pick a server region near you, and isn’t saved. Tumblecrest has no analytics, advertising, crash-reporting or tracking tools.</p>
+    <h2>Information stored on your Mac</h2>
+    <p>To work, the app keeps the following on your Mac only:</p>
+    <ul><li>Your story progress, medals, best times and unlocked colors, in a file in the game’s own folder on your Mac</li><li>Your last 20 replays (and the ones you star), and the clips you save</li><li>Your settings: controls, profiles, sound, graphics and accessibility options</li><li>Your license key, in your Mac’s Keychain</li><li>If you play online: the private half of your online player key, made on your Mac and kept in its Keychain (it never leaves this Mac; our server gets only the public half), and your account id and player name in the game’s preferences. The sign-in session is kept only while the game is open</li></ul>
+    <p>Progress, replays and settings are in Tumblecrest’s Application Support folder and preferences, inside its sandbox; clips are saved where you choose; the license key and the online player key are in your Keychain.</p>
+    <h2>Online play</h2>
+    <p>Tumblecrest works fully offline. Online play comes with the full game. When you first go online, your Mac makes a private key that stays in its Keychain, and our server gives you a made-up player name (you can draw another). We don’t ask for an email address, a real name, your age or a password. Each time the game signs in online it sends your license key to our server, which checks it with Gumroad, our store; we keep only a scrambled form of the key, never the key itself. On our server we keep your player name, your Mac’s public key (how the server recognises you), your online levels and recent ranked match results, and that scrambled license key (to check your purchase and to keep one ranked player per license). Other players see your player name and level. Players in the top 50 of a ranked list are shown there with their name, rank, points and wins. Matches pass through our relay, hosted on Cloudflare, so other players never see your network address; we use it only while you’re connected, to carry the match, to limit abuse and to pick a server region near you (from the rough area the address belongs to), and don’t save it. There is no text or voice chat. We don’t sell or share this data or use it for advertising. Your recent ranked matches (with the other players’ names) are shown only to you. Sessions last a day; a lobby is gone minutes after the last player leaves; a disputed match’s inputs are kept for 30 days; everything else stays until you delete the player, except your license’s ranked level. <strong>Online › Account › Delete this online player</strong> removes your name, key, levels and match results from our server at any time; your ranked level stays with your license (without any match history) for the next player who plays ranked with it.</p>
+    <h2>Network</h2>
+    <p>Tumblecrest is sold directly through Gumroad. Besides online play (only when you choose it, with our server at play.fitztoppicks.com), its network requests are the license check with Gumroad (your license key, when you enter it and about once a week) and checks for game updates at fitztoppicks.com. No analytics, no ads.</p>
+    <h2>Updates and license checks</h2>
+    <p>Tumblecrest, downloaded directly from Gumroad or fitztoppicks.com and signed with Apple’s Developer ID, checks for app updates with Sparkle, a standard open-source updater: it downloads a small update list (an appcast) from fitztoppicks.com, which sees only the app’s version and, like any website, your internet address, and it downloads an update only when one is available and you choose to install it (or have turned on automatic updates). When you enter a license key, Tumblecrest sends that key to Gumroad to verify it, and checks it again about once a week; that is all it sends to Gumroad. Neither sends anything about you, your files or how you use the app.</p>
+    <h2>Purchases</h2>
+    <p>Tumblecrest is sold directly through Gumroad, which handles payment and sends your receipt and license key; we never see your payment details. The app sends your license key to Gumroad to check it (when you enter it and about once a week); that is all it sends to Gumroad.</p>
+    <h2>Children’s privacy</h2>
+    <p>Tumblecrest is made for a general audience and isn’t marketed to children. Online play asks for no email, real name, age or contact details, has no chat, and player names are made up by the game. The identifiers it uses (the account id, your Mac’s public key, your network address and the sign-in session) are used only to run online play: to sign you in, carry matches, keep ranks and leaderboards, and protect the service from cheating and abuse. They are never used for advertising, to contact anyone or to build a profile, and are shared with no one except Cloudflare, which hosts our server. A parent can delete a player in the game (<strong>Online › Account › Delete this online player</strong>) or by emailing <a href="mailto:help@fitztoppicks.com">help@fitztoppicks.com</a> with the player name.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date. If what the game collects ever changes, this policy will be updated before that happens.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy or the app: <a href="mailto:help@fitztoppicks.com">help@fitztoppicks.com</a>.</p>
+    <footer>© 2026 Kevin Fitzgerald. Mac, macOS, iPhone, iPad and App Store are trademarks of Apple Inc., used here for identification only.</footer>
+  </main>
+</body>
+</html>
